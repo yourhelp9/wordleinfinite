@@ -15,21 +15,21 @@
 	<meta name="theme-color" content="#6aaa64" />
 
 	<link rel="manifest" href="manifest.json">
-	<link rel="shortcut icon" href="img/logo_32x32.png" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/logo_192x192.png" />
+	<link rel="shortcut icon" href="img/wordleinfinitelogo.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/wordleinfinitelogo.png" />
 	<link rel="stylesheet" href="global.css">
 
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://wordleinfinite.com/">
 	<meta property="og:title" content="Wordle Infinite - Play Unlimited & Infinite Wordle">
 	<meta property="og:description" content="Guess the word in 6 tries. Play daily, hourly and infinite modes without limits on Wordle Infinite.">
-	<meta property="og:image" content="https://wordleinfinite.com/img/og_1200x630.png">
+	<meta property="og:image" content="https://wordleinfinite.com/img/wordleinfinitelogo.png">
 
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://wordleinfinite.com/">
 	<meta property="twitter:title" content="Wordle Infinite - Play Unlimited & Infinite Wordle">
 	<meta property="twitter:description" content="Play the best Wordle Unlimited game. Infinite words, daily challenges, and no waiting time!">
-	<meta property="twitter:image" content="https://wordleinfinite.com/img/og_1200x630.png">
+	<meta property="twitter:image" content="https://wordleinfinite.com/img/wordleinfinitelogo.png">
 
 	<link rel="canonical" href="https://wordleinfinite.com/" />
 
