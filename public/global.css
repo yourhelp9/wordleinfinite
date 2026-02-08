@@ -43,7 +43,7 @@
 	--key-bg: var(--fg-secondary);
 }
 
-html, body {
+html, body, #app {
 	height: 100%;
 }
 
