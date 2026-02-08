@@ -271,11 +271,27 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		height: 100%;
+		
+		/* CHANGE THIS: height 100% ki jagah 100vh karein */
+		height: 100vh; 
+		
+		/* Isse content game ko shrink nahi kar payega */
+		flex-shrink: 0; 
+
+		width: 100%;
 		max-width: var(--game-width);
-		margin: auto;
+		margin: 0 auto;
 		position: relative;
+		padding-bottom: 10px; /* Keyboard ko thoda gap dene ke liye */
 	}
+
+	/* Mobile par keyboard aur board pichke nahi, isliye ye add karein */
+	@media (max-height: 700px) {
+		main {
+			justify-content: space-around;
+		}
+	}
+
 	.historical {
 		text-align: center;
 		margin-top: 10px;
