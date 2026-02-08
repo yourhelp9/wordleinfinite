@@ -14,6 +14,8 @@
 	import { GameMode } from "./enums";
 	import { Toaster } from "./components/widgets";
 	import { setContext } from "svelte";
+    import SeoContent from "./components/SeoContent.svelte";
+
 
 	document.title = "Wordle Infinite – Play Unlimited Wordle Games Online";
 </script>
@@ -68,4 +70,6 @@
 <Toaster bind:this={toaster} />
 {#if toaster}
 	<Game {stats} bind:word {toaster} bind:game={state} />
+
+<SeoContent />
 {/if}
