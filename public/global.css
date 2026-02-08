@@ -82,7 +82,57 @@ h3 {
 
 a:link, a:visited { color: inherit; }
 
-/* Tutorial and buttons */
+/* Tutorial, Buttons and Select */
+.tutorial {
+	--arrow-size: 10px;
+	--padding: 10px;
+	/* Header ki height ke barabar offset */
+	--h-offset: var(--height, 51px); 
+	
+	font-size: var(--fs-small);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: initial;
+	position: absolute;
+	
+	/* Game area mein sahi jagah alignment */
+	top: calc(var(--arrow-size) + var(--h-offset) + 10px); 
+	left: 50%;
+	transform: translateX(-50%);
+	
+	width: max-content;
+	max-width: min(var(--game-width), 95vw);
+	display: flex;
+	align-items: center;
+	padding: var(--padding);
+	border-radius: 4px;
+	
+	/* Background fix: Dark mode aur Light mode dono ke liye */
+	color: var(--bg-primary);
+	background: var(--fg-primary);
+	z-index: 100;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: calc(-2 * var(--arrow-size));
+	border: var(--arrow-size) solid transparent;
+	border-bottom: var(--arrow-size) solid var(--fg-primary);
+}
+
+.ok {
+	padding: 10px;
+	margin-left: var(--padding);
+	border-radius: 4px;
+	color: white;
+	background: var(--color-correct);
+	cursor: pointer;
+}
+
 .button {
 	margin-top: 15px;
 	text-transform: uppercase;
@@ -94,7 +144,10 @@ a:link, a:visited { color: inherit; }
 	border-radius: 4px;
 	text-align: center;
 }
-.button:hover { opacity: 0.9; }
+
+.button:hover {
+	opacity: 0.9;
+}
 
 select {
 	border: solid 1px var(--border-secondary);
