@@ -108,27 +108,21 @@
 {/if}
 
 <style>
-	.app-container {
+.app-container {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		/* Scrolling smoothly handle karne ke liye */
+		min-height: 100vh;
+		overflow-y: auto;
 		overflow-x: hidden;
 	}
 
 	.game-wrapper {
-		/* IMPORTANT: Isse game chhota nahi hoga */
-		height: 100vh; 
+		/* Isse ye ensure hoga ki game pura area cover kare */
 		width: 100%;
-		flex-shrink: 0; /* Isse content game ko squeeze nahi karega */
-		
 		display: flex;
-		flex-direction: column;
-		align-items: center;
 		justify-content: center;
-		
-		/* Agar mobile par keyboard overlap ho to ise use karein */
-		position: relative; 
+		flex-shrink: 0;
 	}
 
 	.seo-section {
@@ -136,8 +130,6 @@
 		color: var(--fg-primary);
 		padding: 60px 20px;
 		border-top: 1px solid var(--border-primary);
-		
-		/* SEO readability ke liye */
 		user-select: text;
 		-webkit-user-select: text;
 		flex-shrink: 0;
