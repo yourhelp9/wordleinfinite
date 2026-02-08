@@ -14,8 +14,9 @@
 	font-size: var(--fs-regular);
 	user-select: none;
 	-webkit-user-select: none;
-	overflow: hidden;
 	height: 100%;
+}
+
 
 	--fs-tiny: 12px;
 	--fs-small: 14px;
