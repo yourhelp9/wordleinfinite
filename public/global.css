@@ -42,9 +42,10 @@
 	--key-bg: var(--fg-secondary);
 }
 
-body {
-	height: 100%
+html, body {
+	height: 100%;
 }
+
 
 .light {
 	--fg-primary: #1a1a1b;
