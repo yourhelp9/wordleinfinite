@@ -91,41 +91,45 @@
 		border-bottom: 1px solid var(--border-primary);
 		width: 100%;
 		height: var(--height);
-		padding: 0 10px; // Added padding for better mobile view
+		padding: 0 10px;
 	}
+    
 	.icons {
 		height: 100%;
 		z-index: 1;
 		display: flex;
 	}
+
 	h1 {
 		position: absolute;
 		width: max-content;
 		left: 50%;
 		transform: translateX(-50%);
-		font-size: var(--fs-large);
+		/* font-size pehle jaisa hi rakha hai (var--fs-large) */
+		font-size: var(--fs-large); 
 		cursor: pointer;
 		text-align: center;
-		line-height: var(--height);
 		display: flex;
 		align-items: center;
-		letter-spacing: 0.1rem; // Slightly reduced for the logo look
+		margin: 0;
 	}
 	
 	.inf-sign {
-		font-size: 1.25em; // 25% larger than the text
+		/* Sirf symbol ko 20-25% bada kiya gaya hai */
+		font-size: 1.2em; 
 		line-height: 0;
-		vertical-align: middle;
-		margin-left: -2px; // Pulls it slightly closer to 'e'
-		font-weight: normal;
-		// This ensures it looks consistent across browsers
 		display: inline-block;
-		transform: translateY(-1px); 
+		/* Isse infinity sign letters ke center mein align hoga */
+		transform: translateY(2px); 
+		margin-left: 2px;
+		font-weight: bold;
 	}
 
-	@media (max-width: 400px) {
+	/* Agar mobile par text overflow ho raha ho tabhi ye chhota hoga, 
+	   warna ye default size hi lega */
+	@media (max-width: 350px) {
 		h1 {
-			font-size: 28px; // Mobile optimized size
+			font-size: 1.5rem;
 		}
 	}
 </style>
