@@ -18,7 +18,7 @@
     // SEO Component Import
     import SeoContent from "./components/SeoContent.svelte";
 
-	document.title = "Wordle+ | An infinite word guessing game";
+	document.title = "Wordle Infinite - Play Unlimited & Infinite Wordle Game Online";
 </script>
 
 <script lang="ts">
