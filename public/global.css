@@ -14,10 +14,8 @@
 	font-size: var(--fs-regular);
 	user-select: none;
 	-webkit-user-select: none;
+	overflow: hidden;
 	height: 100%;
-}
-
-
 
 	--fs-tiny: 12px;
 	--fs-small: 14px;
@@ -44,10 +42,9 @@
 	--key-bg: var(--fg-secondary);
 }
 
-html, body, #app {
-	height: 100%;
+body {
+	height: 100%
 }
-
 
 .light {
 	--fg-primary: #1a1a1b;
