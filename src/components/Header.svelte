@@ -116,7 +116,7 @@
 	
 	.inf-sign {
 		/* Sirf symbol ko 20-25% bada kiya gaya hai */
-		font-size: 1.8em; 
+		font-size: 1.5em; 
 		line-height: 0;
 		display: inline-block;
 		/* Isse infinity sign letters ke center mein align hoga */
