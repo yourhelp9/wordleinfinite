@@ -2,10 +2,8 @@
 import App from "./App.svelte";
 
 const app = new App({
-	target: document.body,
+	target: document.getElementById("app"),
 	props: {
 		version: "1.5.2",
 	}
 });
-
-export default app;
