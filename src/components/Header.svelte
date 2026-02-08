@@ -36,7 +36,7 @@
 			</GameIcon>
 		{/if}
 	</div>
-	<!-- svelte-ignore a11y-click-events-have-key-events -->
+	
 	<h1
 		on:click|self={() => {
 			$mode = ($mode + 1) % modeData.modes.length;
@@ -47,8 +47,9 @@
 			toaster.pop(modeData.modes[$mode].name);
 		}}
 	>
-		wordle∞
+		wordle<span class="inf-sign">∞</span>
 	</h1>
+
 	<div class="icons">
 		{#if showStats}
 			<GameIcon onClick={() => dispatch("stats")}>
@@ -90,7 +91,7 @@
 		border-bottom: 1px solid var(--border-primary);
 		width: 100%;
 		height: var(--height);
-		position: relative;
+		padding: 0 10px; // Added padding for better mobile view
 	}
 	.icons {
 		height: 100%;
@@ -105,5 +106,26 @@
 		font-size: var(--fs-large);
 		cursor: pointer;
 		text-align: center;
+		line-height: var(--height);
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.1rem; // Slightly reduced for the logo look
+	}
+	
+	.inf-sign {
+		font-size: 1.25em; // 25% larger than the text
+		line-height: 0;
+		vertical-align: middle;
+		margin-left: -2px; // Pulls it slightly closer to 'e'
+		font-weight: normal;
+		// This ensures it looks consistent across browsers
+		display: inline-block;
+		transform: translateY(-1px); 
+	}
+
+	@media (max-width: 400px) {
+		h1 {
+			font-size: 28px; // Mobile optimized size
+		}
 	}
 </style>
